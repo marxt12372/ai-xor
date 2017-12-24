@@ -9,9 +9,9 @@ class Neuron
 	private:
 		int _level;
 		float _weight;
-		std::set<int> _inputs;
+		std::set<float> _inputs;
 	public:
 		Neuron(int level, float weight);
-		void addInput(int input);
+		void addInput(float input);
 		int getOutput();
 };

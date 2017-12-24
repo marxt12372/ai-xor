@@ -6,17 +6,20 @@ Neuron::Neuron(int level, float weight)
 	_weight = weight;
 }
 
-void Neuron::addInput(int input)
+void Neuron::addInput(float input)
 {
 	_inputs.insert(input);
 }
 
 int Neuron::getOutput()
 {
-	int output = 0;
-	for(int input : _inputs)
+	float output = 0;
+	for(float input : _inputs)
 	{
 		output += input;
 	}
-	return output * _weight;
+	//output += _weight;
+	if(output > _weight) return 1;
+	else return 0;
+	//return output * _weight;
 }

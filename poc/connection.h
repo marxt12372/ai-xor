@@ -8,10 +8,10 @@ using namespace std;
 class Connection
 {
 	private:
-		float _level;
+		int _level;
 		float _weight;
 		Neuron * _startPoint;
 	public:
-		Connection(Neuron * startPoint, float level, float weight);
-		int getOutput(int input);
+		Connection(Neuron * startPoint, int level, float weight);
+		float getOutput(float input);
 };
