@@ -14,17 +14,17 @@ Neuron * neuron3;
 
 int main(void)
 {
-	/*inConn1 = new Connection(NULL, 0, 1);
-	inConn2 = new Connection(NULL, 0, 1);
-	inConn3 = new Connection(NULL, 0, 1);
-	inConn4 = new Connection(NULL, 0, 1);
-	neuron1 = new Neuron(1, 1.5);
-	neuron2 = new Neuron(1, 0.5);
-	outConn1 = new Connection(neuron1, 1, -1);
-	outConn2 = new Connection(neuron2, 1, 1);
-	neuron3 = new Neuron(2, 0.5);*/
-
 	inConn1 = new Connection(NULL, 0, 1);
+	inConn2 = new Connection(NULL, 0, -1);
+	inConn3 = new Connection(NULL, 0, -1);
+	inConn4 = new Connection(NULL, 0, 1);
+	neuron1 = new Neuron(1, 1);
+	neuron2 = new Neuron(1, 1);
+	outConn1 = new Connection(neuron1, 1, -0.5);
+	outConn2 = new Connection(neuron2, 1, 0.5);
+	neuron3 = new Neuron(2, 1);
+
+	/*inConn1 = new Connection(NULL, 0, 1);
 	inConn2 = new Connection(NULL, 0, -1);
 	inConn3 = new Connection(NULL, 0, 1);
 	inConn4 = new Connection(NULL, 0, -1);
@@ -32,7 +32,7 @@ int main(void)
 	neuron2 = new Neuron(1, -1.5);
 	outConn1 = new Connection(neuron1, 1, 1);
 	outConn2 = new Connection(neuron2, 1, 1);
-	neuron3 = new Neuron(2, 1.5);
+	neuron3 = new Neuron(2, 1.5);*/
 
 	int a;
 	int b;

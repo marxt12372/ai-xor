@@ -1,9 +1,9 @@
 #include "neuron.h"
 
-Neuron::Neuron(int level, float weight)
+Neuron::Neuron(int level, float bias)
 {
 	_level = level;
-	_weight = weight;
+	_bias = bias;
 }
 
 void Neuron::addInput(float input)
@@ -18,8 +18,7 @@ int Neuron::getOutput()
 	{
 		output += input;
 	}
-	//output += _weight;
-	if(output > _weight) return 1;
-	else return 0;
-	//return output * _weight;
+	//output += _bias;
+	if(output > 0) return 1;
+	else return -1;
 }

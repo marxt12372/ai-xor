@@ -8,10 +8,10 @@ class Neuron
 {
 	private:
 		int _level;
-		float _weight;
+		float _bias;
 		std::set<float> _inputs;
 	public:
-		Neuron(int level, float weight);
+		Neuron(int level, float bias);
 		void addInput(float input);
 		int getOutput();
 };
